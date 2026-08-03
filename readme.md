@@ -3,11 +3,7 @@
     it is website that show the top 10 played game from year 2000 to 2026.
 
 
-<h1>#Day1:</h1>
-    <i>At first i watched tutorial for adding hackatime to my vs-code<i>
+<h1>Navbar</h1>
+This contain a logo , three sections navigator.
 
-    1.Designed the website layout by exploring some website like this.
-    2.Started by making the main-section and navbar.
-    3.collected images for the webiste from ther webites images
-    
-    <img>c:\Users\Hp\Pictures\Screenshots\Screenshot (1).png</img>
+<h1>main section</h1>

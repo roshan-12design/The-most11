@@ -1,18 +1,22 @@
 *{
-    background-color: #0D0F12;
     box-sizing: border-box;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:white;
 }
 body{
-    padding: 0.8em;
+     background-image: url(game12.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow:inset -1px 20px 20px 1000px rgba(0, 0, 0, 0.5);
 }
+
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items:center;     
-    background-color:#0d1116;
+    background-color:#00000082;
     padding:0.5em;
 }
 nav logo img{
@@ -24,30 +28,32 @@ nav ul{
     display:flex;
     gap:2rem;
     list-style:none;
-    background-color:#0d1116;
 }
 
 nav ul li{
-    background-color:#0d1116;
+    background-color:#00000082;
 }
 nav ul li a{
     text-decoration:none;
     color: white;
     font-weight: 600;
     font-size: 1.2rem;
-    background-color:#0d1116;
+    background-color:#00000082; 
 }
 nav ul li a:hover{
     text-decoration:underline;
     color:rgb(187, 183, 183);
 }
 
-.main{
-    font-size:0.8em;
+.main p{
+    font-size:0.9em;
     text-align:center;
-    font-weight:100;
-    margin:2.4rem
+    font-weight:400;
+    margin:2.4rem;
+    color:white;
 }
+
+
 
 main .main2{
     text-align:center;
@@ -58,19 +64,38 @@ main .main2{
 }
 main{
     display:flex;
-    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
+
+}
+
+main h1{
+    font-size:2.9em;
+    font-weight: 700;
 }
 
 .main3 p{
     display: flex;
     flex-direction: column;
+    gap: 0.7rem;
+
 }
 
-.main3{
+.main3 h1{
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
+
+.main3 h1 :nth-child(2) {
+   color:#E53935;
+}
+
+.main3 h1 :nth-child(1) {
+    color:#F5F5F5;
+}
+
+.main3 h1 
 
 main .img2 img{
     height: 60vh;
@@ -84,11 +109,19 @@ main button{
     width: 8.2em;
     margin-top: 2rem;
 }
+
+.main2 p{
+    font-weight: 400;
+    color:#C7CCD6
+}
 main .button1{
     display: flex;
     gap: 2rem;
     margin: 1rem;
-    justify-content: center;
+}
+
+.main{
+    text-decoration:wavy;
 }
 
 @media screen and (max-width: 425px) {
@@ -105,4 +138,10 @@ main .button1{
         width:100vh;
         margin:2em auto;
     }
+}
+
+.main3{
+    text-align:left;
+    padding: 1.2rem;
+    justify-content: flex-start;
 }
