@@ -7,6 +7,13 @@ body{
     background-color:black;
 }
 
+html,
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
 
 .body{
     background-image: url(game12.png);
@@ -14,6 +21,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     box-shadow:inset -1px 20px 20px 1000px rgba(0, 0, 0, 0.5);
+    width:100%;
+    min-height:100vh;
+
 
 }
 
@@ -73,6 +83,7 @@ main{
     display:flex;
     font-size: 1.2rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
    
 
 }
@@ -156,7 +167,9 @@ main .button1{
     justify-content: flex-start;
     margin: 3px;
     margin:3px;
-    box-shadow:inset -1px 20px 20px 1000px rgba(0, 0, 0, 0.5);
+    /* box-shadow:inset -1px 19px 2000px 10px white;
+    border-radius: 60px; */
+    /* background:radical-gradient(circle,#252538 0%,#ffffff 0%,#000000 100%); */
 }
 .feature h1{
     font-size:3.9em;
@@ -165,11 +178,8 @@ main .button1{
 }
 
 .feature video{
-    height: 30em;
-    width: 50em;
+    width: 60%;
     margin: 1.2rem;
-    border-radius:30%;
-    box-shadow: 3px 20px 2000000px 200px rgba(255, 255, 255, 0.5);
     color:rgb(11, 10, 10);
 
 }
@@ -182,13 +192,64 @@ main .button1{
 
 .feature p{
     letter-spacing: 2px;
+    font-weight:600;
 }
 
 .card1 :nth-child(2) span{
-    font-size: 2.2rem;
+    font-size: 2.2rem;  
     font-weight:600;
-    color:red
+    color:red;
 }
+
+@media screen and (max-width: 768px) {
+   .body{
+    background-image: url(mobile-background.png);
+    width:100%;
+   }
+   .main3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+   }
+
+  .main3{
+    font-size:0.8em
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button1{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .feature p{
+    letter-spacing: 0px;
+  }
+
+  
+
+}
+
+@media screen and (max-width: 320px) {
+    nav ul li{
+        font-size:2px;
+
+    }
+    nav{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        margin: right 46px
+
+    }
+      
+     
+    }
 
 
 
