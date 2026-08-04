@@ -4,13 +4,18 @@
     color:white;
 }
 body{
-     background-image: url(game12.png);
+    background-color:black;
+}
+
+
+.body{
+    background-image: url(game12.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow:inset -1px 20px 20px 1000px rgba(0, 0, 0, 0.5);
-}
 
+}
 
 nav{
     display: flex;
@@ -18,6 +23,8 @@ nav{
     align-items:center;     
     background-color:#00000082;
     padding:0.5em;
+    position:sticky;
+    top:0;
 }
 nav logo img{
     height:3rem;
@@ -123,22 +130,19 @@ main .button1{
 .main{
     text-decoration:wavy;
 }
-
-@media screen and (max-width: 425px) {
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
-        width: 100%;
-    } 
+.curve{
+    height: 19vh;
+    width: 100%;
+    border-top:2px solid #E53935;
+    border-radius: 96%;
+}
 
      main .img2 img{
         height: 23em;
         width:100vh;
         margin:2em auto;
     }
-}
+
 
 .main3{
     text-align:left;
