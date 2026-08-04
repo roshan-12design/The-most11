@@ -149,3 +149,47 @@ main .button1{
     padding: 1.2rem;
     justify-content: flex-start;
 }
+
+.feature{
+    text-align:center;
+    padding: 1.2rem;
+    justify-content: flex-start;
+    margin: 3px;
+    margin:3px;
+    box-shadow:inset -1px 20px 20px 1000px rgba(0, 0, 0, 0.5);
+}
+.feature h1{
+    font-size:3.9em;
+    font-weight: 100;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.feature video{
+    height: 30em;
+    width: 50em;
+    margin: 1.2rem;
+    border-radius:30%;
+    box-shadow: 3px 20px 2000000px 200px rgba(255, 255, 255, 0.5);
+    color:rgb(11, 10, 10);
+
+}
+.feature .view{
+    display: flex;
+    justify-content: space-around;
+    border:4px double white;
+    background-color: #130000;
+}
+
+.feature p{
+    letter-spacing: 2px;
+}
+
+.card1 :nth-child(2) span{
+    font-size: 2.2rem;
+    font-weight:600;
+    color:red
+}
+
+
+
+
