@@ -113,7 +113,7 @@ main h1{
     color:#F5F5F5;
 }
 
-.main3 h1 
+/* .main3 h1  */
 
 main .img2 img{
     height: 60vh;
@@ -210,7 +210,7 @@ body {
   line-height: 0;
 }
 
-.video-wrapper video {
+.video-wrapper img {
   width: 100%;
   max-height: 480px;
   object-fit: cover;
@@ -220,6 +220,10 @@ filter:brightness(70%);
 
 .card {
   padding: 28px;
+}
+.featured{
+  width:50vw;
+  margin: auto;
 }
 
 .game1 {
@@ -347,6 +351,29 @@ justify-content: space-around;
   text-align: center;
 }
 
+.other-cards{
+  display:flex;
+  position: relative;
+  left:18em ;
+  justify-content: right;
+  gap:12px;
+  overflow-x:auto;
+  flex-wrap:nowrap;
+  scroll-behavior: smooth;
+  margin: 10em;
+}
+
+.other-cards .popular img{
+  width:100%;
+  max-width:150px;
+  height:150px;
+}
+
+.other-cards .popular{
+  border:1px solid gray;
+  width:10em;
+  height:16em;
+}
 
 
 
