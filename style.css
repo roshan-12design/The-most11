@@ -387,9 +387,6 @@ font-size: 4.2rem;
   height:200px;
   border-radius:10%;
 }
-.other-cards .popular img:hover{
-  transform: scale(1.02);
-}
 
 
 
@@ -432,18 +429,19 @@ font-size: 4.2rem;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  background-color: #000000;
-}
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-out;
+    transform-style: preserve-3d;}
 
 .popular{
-  height: max-content;
+  height:20em;
   width:fit-content;
+}
+
+.popular:hover{
+  transform: rotateY(180);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -481,6 +479,10 @@ font-size: 4.2rem;
 .reveal-card{
   color: white;
   transform: rotateY(180deg);
+  background-color:rgba(255, 255, 255, 0.04);
+  width:20em;
+  width:30em;
+  border-radius:10%;
 }
 
 
