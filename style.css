@@ -358,7 +358,8 @@ justify-content: space-around;
   display:grid;
   grid-template-columns:1fr 1fr;
   row-gap: 31em;
-  /* white-space-collapse:nowrap; */
+  overflow-y: auto;
+  white-space-collapse:nowrap;
   scroll-behavior: smooth;
   width:90%;
   height:100vh;
@@ -489,8 +490,76 @@ font-size: 4.2rem;
   border-radius:10%;
 }
 
+footer{
+  border-top:3px solid gray;
+  padding: 2rem;
+  background-color:rgb(15, 14, 14)
+}
 
-          
+footer img{
+  transform:scale(1.1);
+}
+
+footer .mail img{
+  transform:scale(1.2)
+}
+
+footer .contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
+
+footer .mail {
+  height: fit-content;
+  width: 12em;
+  display:flex;
+  flex-direction: row-reverse;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid red;
+  background-color: #00F0FF;
+  color:black;
+}
+
+footer .contact a{
+  text-decoration: none;
+  color: black;
+}
+footer .contact a:hover{
+  text-decoration: underline;
+  font-size:larger;
+}
+
+footer .github{
+  display:flex;
+  flex-direction: row-reverse;
+  height: fit-content;
+  width: 12em;
+  gap:2px;
+  justify-content: center;
+  align-items: center;
+  border:3px solid red;
+  background-color: #00F0FF;
+  color:black;
+}
+
+footer .contact{
+  margin-bottom: 23px;
+}
+
+
+footer .text{
+  text-align:center;
+}
+
+@keyfarmes throttle-shake{
+  0% {
+    transform:translate(0,0) rotate
+}         
 
 @media screen and (max-width: 768px) {
    .body{
