@@ -141,8 +141,8 @@ main .button1{
 .main3{
     text-align:left;
     padding-left:21px;
-    padding-top: 5em;
-    text-shadow:20px 16px 4px black
+    padding-top: 2em;
+    text-shadow:20px 16px 4px black;
 }
 
 .main{
@@ -217,6 +217,10 @@ body {
   object-fit: cover;
   display: block;
 filter:brightness(70%);
+}
+
+.video-wrapper img:hover{
+  transform:scale(1.02)
 }
 
 .card {
@@ -317,6 +321,9 @@ section.iigame{
   object-fit: cover;
 
 }
+.iigame img:hover{
+  transform:scale(1.02);
+}
 
 .iigame{
 background-color: rgba(255, 255, 255, 0.04);
@@ -358,7 +365,7 @@ justify-content: space-around;
 .other-cards{
   display:grid;
   grid-template-columns:1fr 1fr;
-  row-gap: 31em;
+  row-gap: 32em;
   overflow-y: auto;
   white-space-collapse:nowrap;
   scroll-behavior: smooth;
@@ -399,7 +406,7 @@ font-size: 4.2rem;
   display: flex;
   flex-wrap: wrap; 
   background-color:rgba(255, 255, 255, 0.04);
-  padding:1em;
+  padding:2em;
   transition:ease-in-out;
   perspective: 1000px;
 }
@@ -493,8 +500,10 @@ font-size: 4.2rem;
 
 footer{
   border-top:3px solid gray;
-  padding: 2rem;
-  background-color:rgb(15, 14, 14)
+  background-color:rgb(0, 0, 0);
+  width: 90%;
+  margin: 4em auto;
+  height:fit-content;
 }
 
 footer img{
@@ -534,7 +543,11 @@ footer .contact a{
 }
 footer .contact a:hover{
   text-decoration: underline;
-  font-size:larger;
+  font-size:1.4em;
+}
+
+footer .mail , .github:hover{
+  transform:scale(1.0)
 }
 
 footer .github{
@@ -574,6 +587,15 @@ footer .links ul li{
 
 footer .links ul li{
   list-style: none;
+  color:#a1a1aa
+}
+
+footer .text h5{
+  color:#a1a1aa
+}
+
+div.links h2{
+  color:#a1a1aa;
 }
 
 footer .links ul{
@@ -588,7 +610,13 @@ footer .links ul a{
 
 footer .links ul a:hover{
   text-decoration: underline;
-  color:#a1a1aa
+  color:#a1a1aa;
+  font-size: larger;
+}
+
+footer .disclaimer p{
+  color:#a1a1aa;
+  text-align:center;
 }
 
 
@@ -621,7 +649,7 @@ footer .links ul a:hover{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
    .body{
     background-image: url(mobile-background.png);
     width:100%;                                                            
@@ -652,6 +680,15 @@ footer .links ul a:hover{
   }
 
 
+}
+
+@media screen and(max-width:768px) {
+  .body{
+    
+  }
+
+
+  
 }
 
 @media screen and (max-width: 320px) {
@@ -688,7 +725,7 @@ footer .links ul a:hover{
   }
       @media screen and (max-width: 1024px) {
         .body{
-        background-image: url(mobile-background.png);
+        
         width:100%;                                                            
    }
 }
