@@ -446,10 +446,7 @@ font-size: 4.2rem;
     transform-style: preserve-3d;
   }
 
-.popular{
-  height:20em;
-  width:fit-content;
-}
+
 
 
 
@@ -457,7 +454,8 @@ font-size: 4.2rem;
   transform: rotateY(180deg);
 }
 
-.naman, .reveal-card {
+.popular, .reveal-card {
+  padding: 12px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -471,13 +469,8 @@ font-size: 4.2rem;
 .flip-card:hover .flip-card-innner{
   transform:rotateY(180);
 }
-.reveal-card{
-  display: flex;
-  flex-direction: column;
-  width:100%;
-  height:60vh;
-  justify-content: space-around;
-}
+
+/* --------------------------------------- */
 
 .naman {
   display: flex;
@@ -496,7 +489,14 @@ font-size: 4.2rem;
   width:30em;
   height:30em;
   border-radius:10%;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height:60vh;
+  justify-content: space-around;
 }
+
+/* --------------------------------------- */
 
 footer{
   border-top:3px solid gray;
@@ -574,8 +574,7 @@ footer .text{
 
 footer .links{
   display: flex;
-  gap: 14rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 16px;
 }
@@ -731,6 +730,7 @@ footer .disclaimer p{
     font-size: 2.9em;
   }
 
+
   }
       @media screen and (max-width: 1024px) {
         .body{
@@ -756,36 +756,65 @@ footer .disclaimer p{
   }
 }
 
-@media screen and (max-width:615px) {
-  .other-cards
-   .popular{
-    width: 100vw;
-  }
-
-  .other-cards .reveal-card{
-    width: 100vw;
-  }
-}
   
 
 @media screen and (max-width:1232px){
   .other-cards
    .popular{
     width: 70%;
+    max-width: 250px;
+    justify-content: center;
+    padding: 23px;
   }
 
   .other-cards{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
     justify-content:center;
-    align-items: flex-start;
   }
 
-  .othe-cards .reveal-card{
+  .other-cards .reveal-card{
+    margin-right: 500px;
+    height: max-content;
+  }
+
+  .flip-card , .flip-card-inner{
     width: 70%;
+    margin: 1rem auto;
+    background-color: black;
+    padding: 23px;
+    justify-content: center;
+    margin-right: 29px;
+  }
+  .other-cards .popular img{
+    width: 20vw;
+    overflow: auto;
   }
 }
+@media screen and (max-width:664px){   
+    .other-cards .popular img{
+    width: 35vw;
+  }
+
+}
+
+@media screen and (max-width:564px){   
+    .other-cards .popular img{
+    width: 40vw;
+  }
+
+}
+
+@media screen and (max-width:320px){   
+    .other-cards .popular img{
+    width: 30vw;
+  }
+
+ 
+}
+
+
 
 @media screen and (max-width:976px){     
   .other-cards{
@@ -802,6 +831,35 @@ footer .disclaimer p{
  .links{
   display:flex;
   flex-direction:column;
+  justify-content: center;
+  justify-content: space-around;
  } 
 }
+
+@media screen and ( max-width:718px){
+  .featu{
+    box-sizing: border-box;
+    margin: 12px;
+    padding: 12px;
+    width:60rem;
+  }
+
+  
+}
+
+@media screen and ( max-width:658px){
+
+  .naman {
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    color: white;
+    height: 70vh;
+    width: 50vh;
+    max-width: 300px;
+    overflow-x: hidden;
+  }
+}
+
+  
 
